@@ -1,0 +1,118 @@
+.app {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  color: var(--text-primary);
+  isolation: isolate;
+}
+
+.app::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    rgba(8, 15, 32, 0.72),
+    var(--bg-image) center center / cover no-repeat fixed;
+  transform: scale(1.02);
+}
+
+.app::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    rgba(255, 255, 255, 0.14),
+    rgba(124, 58, 237, 0.16),
+    rgba(20, 184, 166, 0.12);
+}
+
+.navigation {
+  background: rgba(255, 255, 255, 0.72);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(18px) saturate(150%);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+  background: #f59e0b;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #334155;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #6d28d9;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.app-main {
+  flex: 1;
+  padding: 28px;
+}
+
+@media (max-width: 768px) {
+  .nav-container,
+  .app-main {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

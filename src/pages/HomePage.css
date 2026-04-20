@@ -1,0 +1,255 @@
+.home-page {
+  min-height: calc(100dvh - 126px);
+  padding: 0;
+}
+
+.home-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: 28px;
+  min-height: calc(100dvh - 126px);
+  align-items: stretch;
+}
+
+@media (max-width: 1024px) {
+  .home-content {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 24px;
+  }
+}
+
+.home-primary {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.home-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  min-height: 100%;
+}
+
+.hero-copy {
+  max-width: 700px;
+  color: white;
+}
+
+.hero-copy h1 {
+  margin: 0 0 14px 0;
+  font-size: clamp(36px, 4vw, 58px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  color: white;
+  max-width: 15ch;
+}
+
+.hero-copy p {
+  margin: 0;
+  max-width: 62ch;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.menu-section {
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.2);
+  backdrop-filter: blur(18px) saturate(150%);
+  width: min(500px, 100%);
+  min-height: 560px;
+}
+
+.menu-section h2 {
+  margin: 0 0 8px 0;
+  color: var(--text-primary);
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  margin: 0 0 28px 0;
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-button:hover {
+  border-color: rgba(124, 58, 237, 0.3);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.12);
+  transform: translateX(6px);
+}
+
+.menu-button:active {
+  transform: translateX(2px);
+}
+
+.button-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  font-size: 13px;
+  min-width: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: white;
+}
+
+.button-icon-gold {
+  background: #d97706;
+}
+
+.button-icon-teal {
+  background: #0f766e;
+}
+
+.button-icon-violet {
+  background: #6d28d9;
+}
+
+.button-content {
+  flex: 1;
+}
+
+.button-content h3 {
+  margin: 0 0 4px 0;
+  color: var(--text-primary);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.button-content p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.all-products-btn:hover {
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+.add-product-btn:hover {
+  border-color: rgba(20, 184, 166, 0.32);
+}
+
+.edit-product-btn:hover {
+  border-color: rgba(124, 58, 237, 0.3);
+}
+
+.studio-card {
+  padding: 30px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.25);
+  backdrop-filter: blur(16px) saturate(160%);
+  color: white;
+  max-width: 760px;
+}
+
+.studio-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 30px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.studio-card p {
+  margin: 0 0 22px 0;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+}
+
+.studio-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.workflow-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 1024px) {
+  .home-content {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
+
+  .home-primary {
+    min-height: auto;
+    justify-content: flex-start;
+  }
+
+  .studio-card {
+    max-width: 100%;
+  }
+
+  .home-side {
+    justify-content: flex-start;
+    min-height: auto;
+  }
+
+  .menu-section {
+    min-height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-copy h1 {
+    max-width: none;
+  }
+
+  .workflow-pill {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}

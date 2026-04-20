@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #6d28d9;
+  --secondary-color: #d97706;
+  --accent-color: #0f766e;
+  --primary-gradient: #6d28d9;
+  --secondary-gradient: #d97706;
+  --accent-gradient: #0f766e;
+  --border-color: rgba(148, 163, 184, 0.22);
+  --bg-gradient: rgba(15, 23, 42, 0.78);
+  --surface: rgba(255, 255, 255, 0.84);
+  --surface-strong: rgba(255, 255, 255, 0.95);
+  --text-primary: #172033;
+  --text-secondary: #5b6575;
+  --bg-image: url('/POC2-VM Platform Background Image - No Suit.png');
+}
+
+html {
+  height: 100%;               /* fallback */
+  min-height: 100dvh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI Variable', 'Segoe UI', 'Trebuchet MS', 'Verdana',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0f172a;
+  color: var(--text-primary);
+}
+
+body {
+  height: 100%;               /* fallback */
+  min-height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: var(--text-primary);
+  background:
+    rgba(8, 15, 32, 0.72),
+    var(--bg-image) center center / cover no-repeat fixed;
+}
+
+#root {
+  height: 100%;               /* fallback */
+  min-height: 100dvh;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::selection {
+  background: #3b82f6;
+  color: white;
+}
