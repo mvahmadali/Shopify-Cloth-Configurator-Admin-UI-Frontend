@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = `${import.meta.env.VITE_API_BASE_URL || 'https://shopify-cloth-configurator-admin-ui-production.up.railway.app/api/admin'}`;
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api/admin';
 
 const api = axios.create({
   baseURL: API_BASE,

@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://shopify-cloth-configurator-admin-ui-production.up.railway.app/api/$1"
+    }
+  ]
+}
