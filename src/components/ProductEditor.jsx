@@ -513,9 +513,9 @@ function ProductEditor({ product, onSaveSuccess, defaultEditable = true, onClear
                               disabled={!isEditable}
                             >
                               <option value="" disabled>Upload type</option>
-                              <option value="glb">glb</option>
-                              <option value="texture">texture</option>
                               <option value="mesh">mesh</option>
+                              <option value="texture">texture</option>
+                              <option value="color">color</option>
                             </select>
                             {isEditable ? (
                               <input 
@@ -645,9 +645,9 @@ function OptionForm({ onAddOption }) {
           onChange={handleChange}
         >
           <option value="" disabled>Upload type</option>
-          <option value="glb">glb</option>
-          <option value="texture">texture</option>
           <option value="mesh">mesh</option>
+          <option value="texture">texture</option>
+          <option value="color">color</option>
         </select>
         <input 
           type="file" 
