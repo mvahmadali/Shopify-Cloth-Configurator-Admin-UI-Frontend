@@ -690,3 +690,73 @@
   background: #dc2626;
   transform: translateY(-2px);
 }
+
+/* Keep edit option controls aligned with Add Product page icon treatment. */
+.edit-product-page .product-editor-container .option-input-group {
+  grid-template-columns: minmax(170px, 1.5fr) minmax(90px, 0.8fr) minmax(90px, 1fr) minmax(180px, 1.2fr) 40px;
+  gap: 12px;
+  align-items: center;
+}
+
+.edit-product-page .product-editor-container .option-input-group > * {
+  min-width: 0;
+}
+
+.edit-product-page .product-editor-container .option-input-group input,
+.edit-product-page .product-editor-container .option-input-group select {
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.edit-product-page .product-editor-container .option-input-group input:focus,
+.edit-product-page .product-editor-container .option-input-group select:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+  outline: none;
+}
+
+.edit-product-page .product-editor-container .add-option-btn {
+  background: none;
+  color: var(--primary-color);
+  border: none;
+  padding: 8px;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  box-shadow: none;
+}
+
+.edit-product-page .product-editor-container .add-option-btn:hover {
+  background: none;
+  color: #5b21b6;
+  transform: scale(1.1);
+}
+
+.edit-product-page .product-editor-container .remove-option-btn,
+.edit-product-page .product-editor-container .remove-btn {
+  background: none;
+  color: #e11d48;
+  border: none;
+  padding: 8px;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  box-shadow: none;
+}
+
+.edit-product-page .product-editor-container .remove-option-btn:hover,
+.edit-product-page .product-editor-container .remove-btn:hover {
+  background: none;
+  color: #be123c;
+  transform: scale(1.1);
+}
